@@ -18,9 +18,11 @@ namespace YesNoApp.Data
                 new YesNo
                 {
                     ID = 1,
-                    YesOrNo = "",
-                    Meme = "",
+                    YesOrNo = "Yes",
+                    Meme = "Test",
                 });
         }
+        public DbSet<YesNo> YesNoTable { get; set; }
+
     }
 }

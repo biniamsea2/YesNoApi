@@ -31,7 +31,7 @@ namespace YesNoApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-//register our DbContext
+            //register our DbContext
             services.AddDbContext<YesNoDbContext>(options =>
      options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //register service:
