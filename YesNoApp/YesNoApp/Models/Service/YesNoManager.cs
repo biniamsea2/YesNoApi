@@ -1,21 +1,23 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using YesNoApp.Data;
 using YesNoApp.Models.Interfaces;
 
 namespace YesNoApp.Models.Services
 {
     public class YesNoManager : IYesNo
     {
-        public Task<YesNo> GetSinlgeYesNoRandom(int id)
+        //DP:
+        private YesNoDbContext _context;
+        public YesNoManager(YesNoDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
+        public async Task<YesNo> GetSinlgeYesNoRandom(int id) => await _context.YesNoTable.FirstOrDefaultAsync(x => x.ID == id);
+        public async Task<YesNo> GetYesNoByID(int id) => await _context.YesNoTable.FirstOrDefaultAsync(x => x.ID == id);
 
-        public Task<YesNo> GetYesNoByID(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
