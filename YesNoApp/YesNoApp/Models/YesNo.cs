@@ -9,6 +9,6 @@ namespace YesNoApp.Models
     {
         public int ID { get; set; }
         public string YesOrNo { get; set; }
-        public string Meme { get; set; }
+        public string Gif { get; set; }
     }
 }
