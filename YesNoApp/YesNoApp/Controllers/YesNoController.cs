@@ -9,13 +9,13 @@ namespace YesNoApp.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class HomeController : ControllerBase
+    public class YesNoController : ControllerBase
     {
         //DP:
         private readonly IYesNo _context;
         private Random randomNum = new Random();
 
-        public HomeController(IYesNo yesNo)
+        public YesNoController(IYesNo yesNo)
         {
             _context = yesNo;
         }
