@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using YesNoApp.Data;
 
 namespace YesNoApp.Migrations
 {
     [DbContext(typeof(YesNoDbContext))]
-    partial class YesNoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201203093216_SeededDB")]
+    partial class SeededDB
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
