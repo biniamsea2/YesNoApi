@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace YesNoApp.Models.Interfaces
 {
-    interface IYesNo
+    public interface IYesNo
     {
         //will get a random yes no and one by ID from the database, needs an id because we will use that to grab a random record
         Task<YesNo> GetSinlgeYesNoRandom(int id);
