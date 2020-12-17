@@ -51,12 +51,10 @@ Then select and open ```YesNoApp.sln```
 
 ### Visuals
 
-### Get random record
-![Image 1](https://github.com/biniamsea2/KobeAPI/blob/master/Screenshot%20(4).png)
-### Get record based on ID
-![Image 1](https://github.com/biniamsea2/KobeAPI/blob/master/Screenshot%20(5).png)
-### Get all records
-![Image 1](https://github.com/biniamsea2/KobeAPI/blob/master/Screenshot%20(6).png)
+### Get random yes/ no
+![Image 1](https://github.com/biniamsea2/YesNoApi/blob/main/Screenshot%20(15).png)
+### Get yes/ no based on ID
+![Image 1](https://github.com/biniamsea2/YesNoApi/blob/main/Screenshot%20(16).png)
 
 ---
 ### Records Table:  
