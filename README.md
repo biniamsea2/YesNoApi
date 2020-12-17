@@ -62,6 +62,4 @@ Then select and open ```YesNoApp.sln```
 ### Records Table:  
 The "YesNoTable" in our YesNoDB database consists of 10 yes/ no. Each row has information regarding a primary ID key, yes/ no, and a gif. 
 
-Records found at: https://en.wikipedia.org/wiki/List_of_career_achievements_by_Kobe_Bryant  
-
 ---
